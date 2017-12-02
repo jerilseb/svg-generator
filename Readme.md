@@ -1,6 +1,6 @@
 ## SVG generator
 
-The following code gets compiled to this svg
+The following code gets compiled to [this](http://jerilseb.github.io/svg-generator/) svg
 
 ```
 Paper 20 
