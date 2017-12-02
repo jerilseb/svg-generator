@@ -72,6 +72,30 @@ export default function parser(tokens) {
           // push the expression object to body of our AST
           AST.body.push(expression);
           break;
+
+        case "Circle":
+          var expression = {
+            type: "CallExpression",
+            name: "Circle",
+            arguments: []
+          };
+          // if current token is CallExpression of type circle,
+          // next 3 tokens should be position and radius arguments
+          for (var i = 0; i < 3; i++) {
+            var argument = tokens.shift();
+            if (argument.type === "number") {
+              // add argument information to expression object
+              expression.arguments.push({
+                type: "NumberLiteral",
+                value: argument.value
+              });
+            } else {
+              throw "Circle command must be followed by 3 numbers.";
+            }
+          }
+          // push the expression object to body of our AST
+          AST.body.push(expression);
+          break;
       }
     }
   }

@@ -49,6 +49,20 @@ export default function transformer(ast) {
           }
         });
         break;
+      case "Circle":
+        // add circle element information to svg_ast's body
+        svg_ast.body.push({
+          tag: "circle",
+          attr: {
+            cx: node.arguments[0].value,
+            cy: node.arguments[1].value,
+            r: node.arguments[2].value,
+            fill: "white",
+            "stroke-width": "2px",
+            stroke: "rgb(" + pen_color + "%," + pen_color + "%," + pen_color + "%)"
+          }
+        });
+        break;
     }
   }
   return svg_ast;
