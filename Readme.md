@@ -1,6 +1,6 @@
 ## SVG generator
 
-A small compiler which takes sequential instructions like the following and renders to an [svg](http://jerilseb.github.io/svg-generator/)
+A small compiler which takes sequential instructions like the following and renders to an SVG
 
 ```
 Paper 20 
@@ -10,3 +10,5 @@ Line 300 50 100 250
 Line 100 250 100 50
 Circle 200 250 100
 ```
+
+[Generated SVG](http://jerilseb.github.io/svg-generator/)
