@@ -1,6 +1,6 @@
 ## SVG generator
 
-The following code gets compiled to [this](http://jerilseb.github.io/svg-generator/) svg
+A small compiler which takes sequential instructions like the following and renders to an [svg](http://jerilseb.github.io/svg-generator/)
 
 ```
 Paper 20 
