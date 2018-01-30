@@ -1,5 +1,7 @@
 ## SVG generator
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jerilseb/svg-generator.svg)](https://greenkeeper.io/)
+
 A small compiler which takes sequential instructions like the following and renders to an SVG
 
 ```
